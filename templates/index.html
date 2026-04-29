@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Игра на Canvas</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="game-container">
-        <h1>Игра на Canvas</h1>
+        <h1>Snake Game</h1>
         <div class="score-panel">
             <span>Счёт: <span id="score">0</span></span>
         </div>
-        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <canvas id="gameCanvas"></canvas>
         <div class="controls">
-            <p>Используйте клавиши со стрелками для управления</p>
+            <p>Используйте <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> для управления</p>
+            <p>Нажмите <kbd>P</kbd> для паузы</p>
+            <p>Нажмите <kbd>SPACE</kbd> для старта/рестарта</p>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/game.js') }}"></script>

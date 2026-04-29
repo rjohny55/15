@@ -1,4 +1,4 @@
-/* Основные стили для игры на Canvas */
+/* Main stylesheet for Snake Game */
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Arial', 'Helvetica', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,50 +18,56 @@ body {
 
 .game-container {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    padding: 20px;
 }
 
 .game-container h1 {
-    color: #4a5568;
+    color: #00ff88;
     margin-bottom: 20px;
     font-size: 2rem;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
 .score-panel {
-    background-color: #f7fafc;
-    border: 2px solid #e2e8f0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ff88;
     border-radius: 8px;
     padding: 12px 24px;
     margin-bottom: 20px;
     display: inline-block;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #2d3748;
+    color: #00ff88;
 }
 
 .score-panel span:last-child {
-    color: #667eea;
+    color: #00ff88;
     font-size: 1.4rem;
 }
 
 #gameCanvas {
-    border: 3px solid #4a5568;
+    border: 3px solid #00ff88;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #1a1a2e;
     display: block;
     margin: 0 auto 20px auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
 }
 
 .controls {
-    margin-top: 10px;
-    color: #718096;
-    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .controls p {
-    margin: 0;
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+.controls kbd {
+    background: #333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid #555;
 }
