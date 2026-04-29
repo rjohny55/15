@@ -1,0 +1,67 @@
+/* Основные стили для игры на Canvas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.game-container h1 {
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.score-panel {
+    background-color: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.score-panel span:last-child {
+    color: #667eea;
+    font-size: 1.4rem;
+}
+
+#gameCanvas {
+    border: 3px solid #4a5568;
+    border-radius: 8px;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    margin-top: 10px;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.controls p {
+    margin: 0;
+}
